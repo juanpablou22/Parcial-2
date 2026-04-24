@@ -279,21 +279,107 @@ body {
   text-decoration: underline;
 }
 
+.movies {
+  background: #dfdfdf;
+  padding: 18px 38px 28px;
+}
+
+.movies h2,
+.parks h2 {
+  text-align: center;
+  font-size: 37px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.cards-grid--5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.movie-card img {
+  width: 100%;
+  display: block;
+  border: 1px solid #b7b7b7;
+}
+
+.movie-card h3 {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.15;
+  min-height: 34px;
+}
+
+.movie-card p {
+  margin-top: 3px;
+  font-size: 9px;
+  color: #5a5a5a;
+}
+
+.parks {
+  background: #dfdfdf;
+  padding: 12px 38px 34px;
+}
+
+.cards-grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.park-card {
+  background: #efefef;
+  border: 1px solid #d4d4d4;
+}
+
+.park-card img {
+  width: 100%;
+  display: block;
+}
+
+.park-copy {
+  padding: 8px 15px 12px;
+  text-align: center;
+}
+
+.park-copy h3 {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.park-copy p {
+  font-size: 9px;
+  color: #262626;
+  line-height: 1.35;
+  min-height: 34px;
+}
+
+.park-copy a {
+  margin-top: 7px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #151515;
+  font-size: 9px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.park-copy a:hover {
+  text-decoration: underline;
+}
+
 .handoff {
   background: #dfdfdf;
   text-align: center;
-  padding: 56px 16px 74px;
-}
-
-.handoff h2 {
-  font-size: 37px;
-  font-weight: 400;
-  margin-bottom: 10px;
+  border-top: 1px solid #d2d2d2;
+  padding: 14px 16px 20px;
 }
 
 .handoff p {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 @media (max-width: 980px) {
@@ -306,6 +392,14 @@ body {
   }
 
   .cards-grid--3 {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid--5 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cards-grid--2 {
     grid-template-columns: 1fr;
   }
 
@@ -359,5 +453,14 @@ body {
 
   .cards-grid--4 {
     grid-template-columns: 1fr;
+  }
+
+  .cards-grid--5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .movies h2,
+  .parks h2 {
+    font-size: 29px;
   }
 }
