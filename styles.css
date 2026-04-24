@@ -371,6 +371,7 @@ body {
 }
 
 .more {
+  position: relative;
   background: #cfe5e7 url("images/more-background.jpeg") left center / cover no-repeat;
   min-height: 470px;
   display: flex;
@@ -429,16 +430,53 @@ body {
   background: #7e3c9d;
 }
 
-.handoff {
-  background: #dfdfdf;
-  text-align: center;
-  border-top: 1px solid #d2d2d2;
-  padding: 14px 16px 20px;
+.more-legal {
+  position: absolute;
+  right: 18px;
+  bottom: 8px;
+  font-size: 9px;
+  color: #54717a;
 }
 
-.handoff p {
-  color: var(--muted);
-  font-size: 12px;
+.site-footer {
+  background: #ffffff;
+  text-align: center;
+  border-top: 1px solid #e2e2e2;
+  padding: 14px 22px 16px;
+}
+
+.footer-logo {
+  width: 74px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 14px;
+  row-gap: 5px;
+  margin-bottom: 7px;
+}
+
+.footer-links a {
+  font-size: 8px;
+  color: #222;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links--secondary {
+  margin-bottom: 8px;
+}
+
+.footer-copy {
+  font-size: 8px;
+  color: #666;
 }
 
 @media (max-width: 980px) {
@@ -479,6 +517,12 @@ body {
     min-height: 390px;
     padding-right: 30px;
     background-position: 24% center;
+  }
+
+  .more-legal {
+    right: 12px;
+    bottom: 6px;
+    font-size: 8px;
   }
 
   .more-content h2 {
@@ -585,5 +629,21 @@ body {
     width: 142px;
     height: 34px;
     font-size: 12px;
+  }
+
+  .more-legal {
+    position: static;
+    margin-top: 9px;
+    text-align: center;
+    font-size: 8px;
+  }
+
+  .footer-links {
+    column-gap: 9px;
+  }
+
+  .footer-links a,
+  .footer-copy {
+    font-size: 7px;
   }
 }
