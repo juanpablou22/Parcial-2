@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney | Educational Layout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <img class="logo" src="images/logo.png" alt="Disney logo">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#">Disney+</a>
+          <a href="#">Parks &amp; Travel</a>
+          <a href="#">Movies</a>
+          <a href="#">Shop</a>
+          <a href="#">More</a>
+        </nav>
+      </div>
+      <div class="topbar-right">
+        <a class="login-link" href="#">Log In</a>
+        <form class="search" role="search" aria-label="Site search">
+          <input type="search" placeholder="Search">
+          <button type="submit" aria-label="Search">&#128269;</button>
+        </form>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="Snow White banner">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <img src="images/snow-white.png" alt="Disney Snow White">
+        <p>Experience Disney White, now playing only in theaters!</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">Get Tickets Now</a>
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="shop" aria-label="Featured shop cards">
+        <div class="cards-grid cards-grid--4">
+          <article class="card card--shop">
+            <img src="images/shop-image-1.png" alt="A special performance">
+            <div class="card-copy">
+              <h3>A Special Performance</h3>
+              <p>Rachel Zegler performs Waiting on a Wish at the Castle that inspired the original Snow White.</p>
+              <a href="#">Watch Now</a>
+            </div>
+          </article>
+
+          <article class="card card--shop">
+            <img src="images/shop-image-2.png" alt="The art of fairytale fashion">
+            <div class="card-copy">
+              <h3>The Art of Fairytale Fashion</h3>
+              <p>Legendary costume designer Sandy Powell brings fairytale fashion to the new film.</p>
+              <a href="#">Watch Now</a>
+            </div>
+          </article>
+
+          <article class="card card--shop">
+            <img src="images/shop-image-3.png" alt="Disney Store Snow White doll">
+            <div class="card-copy">
+              <h3>Disney Store</h3>
+              <p>NEW Disney's Snow White 15 Limited Edition Doll.</p>
+              <a href="#">Shop Now</a>
+            </div>
+          </article>
+
+          <article class="card card--shop">
+            <img src="images/shop-image-4.png" alt="Musical conversation with Pasek and Paul">
+            <div class="card-copy">
+              <h3>A Musical Conversation with Pasek and Paul</h3>
+              <p>Rachel Zegler and the songwriting duo reminisce about bringing the soundtrack to life.</p>
+              <a href="#">Watch Now</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="disney-plus" aria-label="Explore Disney Plus">
+        <h2>Explore More Disney+</h2>
+        <div class="cards-grid cards-grid--3 cards-grid--plus">
+          <article class="card card--plus">
+            <img src="images/disney-plus-1.png" alt="Moana 2 poster on Disney Plus">
+            <p>Moana 2 is now available, only on Disney+.</p>
+            <a href="#">Available on Disney+</a>
+          </article>
+
+          <article class="card card--plus">
+            <img src="images/disney-plus-2.png" alt="Daredevil Born Again poster">
+            <p>Marvel Television's all-new series is now streaming on Disney+.</p>
+            <a href="#">Stream Now</a>
+          </article>
+
+          <article class="card card--plus">
+            <img src="images/disney-plus-3.png" alt="Next on Disney Plus">
+            <p>Everything new coming to Disney+ this month!</p>
+            <a href="#">Learn More</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="handoff" aria-label="Project handoff point">
+        <h2>Coming Soon to Disney+</h2>
+        <p>Handoff point: from this section downward, your teammate can continue the second half of the page.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
